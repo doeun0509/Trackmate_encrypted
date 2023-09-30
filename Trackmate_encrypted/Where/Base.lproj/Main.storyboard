@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="BYZ-38-t0r" customClass="MapViewController" customModule="Where" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jk-p6-H0v">
+                                <rect key="frame" x="0.0" y="618" width="393" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IHc-x0-OYN"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6K6-4C-24Q" customClass="NMFMapView">
+                                <rect key="frame" x="16" y="89" width="361" height="509"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6K6-4C-24Q" secondAttribute="trailing" constant="16" id="PYL-FU-tB0"/>
+                            <constraint firstItem="6K6-4C-24Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VYH-9x-9cV"/>
+                            <constraint firstItem="4Jk-p6-H0v" firstAttribute="top" secondItem="6K6-4C-24Q" secondAttribute="bottom" constant="20" id="hKg-sN-dC3"/>
+                            <constraint firstItem="4Jk-p6-H0v" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hy6-aF-DkO"/>
+                            <constraint firstItem="6K6-4C-24Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="j7F-1y-oi0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Jk-p6-H0v" secondAttribute="trailing" id="oTQ-om-NAP"/>
+                            <constraint firstItem="4Jk-p6-H0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q4Z-bg-Y5m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="information" destination="4Jk-p6-H0v" id="PSq-B5-MCE"/>
+                        <outlet property="mapView" destination="6K6-4C-24Q" id="1Rf-Gb-gWZ"/>
+                        <segue destination="bET-Hy-TK3" kind="show" identifier="Search" id="tfW-1k-OlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.64885496183206" y="3.5211267605633805"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="ewT-V9-dmE">
+            <objects>
+                <viewController id="bET-Hy-TK3" customClass="SearchViewController" customModule="Where" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wgt-G0-CJf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-NG-mbf">
+                                <rect key="frame" x="17" y="7" width="359" height="776"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzb-o7-pPF">
+                                        <rect key="frame" x="28" y="213" width="302" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78350543299999997" green="0.94219990740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.28520373339999999" green="0.60155311349999996" blue="0.93255040020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-ss-P4C">
+                                        <rect key="frame" x="28" y="329" width="302" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78350543299999997" green="0.94219990740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.28520373339999999" green="0.60155311349999996" blue="0.93255040020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-hT-een">
+                                        <rect key="frame" x="20" y="535" width="319" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <segue destination="hpJ-RG-O14" kind="embed" identifier="mapLoute" id="ASn-Uy-PQc"/>
+                                        </connections>
+                                    </containerView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="midLocation.png" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-Xl-DCD">
+                                        <rect key="frame" x="20" y="147" width="135" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ord-ZM-Fwj">
+                                        <rect key="frame" x="233" y="34" width="97" height="38.333333333333336"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78350543299999997" green="0.94219990740000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.28520373342703992" green="0.60155311354257668" blue="0.93255040020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="who.png" translatesAutoresizingMaskIntoConstraints="NO" id="t7h-qX-WSq">
+                                        <rect key="frame" x="20" y="20" width="196" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="station.png" translatesAutoresizingMaskIntoConstraints="NO" id="kgs-PB-Eq0">
+                                        <rect key="frame" x="20" y="259" width="135" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yoc-q4-Hap"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xfj-NG-mbf" firstAttribute="top" secondItem="Yoc-q4-Hap" secondAttribute="top" constant="7" id="Hn9-AP-BOk"/>
+                            <constraint firstItem="Yoc-q4-Hap" firstAttribute="bottom" secondItem="Xfj-NG-mbf" secondAttribute="bottom" constant="59" id="owF-WG-y1U"/>
+                            <constraint firstItem="Yoc-q4-Hap" firstAttribute="trailing" secondItem="Xfj-NG-mbf" secondAttribute="trailing" constant="17" id="tfY-BW-zGF"/>
+                            <constraint firstItem="Xfj-NG-mbf" firstAttribute="leading" secondItem="Yoc-q4-Hap" secondAttribute="leading" constant="17" id="ymW-99-VFG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YQh-0F-Lmg"/>
+                    <connections>
+                        <outlet property="Location" destination="Zzb-o7-pPF" id="bgE-GI-yFP"/>
+                        <outlet property="nameField" destination="ord-ZM-Fwj" id="5tS-13-e4n"/>
+                        <outlet property="station" destination="YKB-ss-P4C" id="EUE-5I-5Hr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XZ-Xi-yI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872.5190839694656" y="9.8591549295774659"/>
+        </scene>
+        <!--Map Route View Controller-->
+        <scene sceneID="zxz-z3-lgO">
+            <objects>
+                <viewController id="hpJ-RG-O14" customClass="MapRouteViewController" customModule="Where" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I8t-40-gwb">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="221"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xgA-fK-kVs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tC9-Gl-3wx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2723" y="10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="midLocation.png" width="250" height="100"/>
+        <image name="station.png" width="75" height="75"/>
+        <image name="who.png" width="300" height="100"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C887B5CD2AC8516B00D7DEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5CC2AC8516B00D7DEFD /* AppDelegate.swift */; };
+		C887B5CF2AC8516B00D7DEFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5CE2AC8516B00D7DEFD /* SceneDelegate.swift */; };
+		C887B5D42AC8516B00D7DEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887B5D22AC8516B00D7DEFD /* Main.storyboard */; };
+		C887B5D62AC8516C00D7DEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887B5D52AC8516C00D7DEFD /* Assets.xcassets */; };
+		C887B5D92AC8516C00D7DEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887B5D72AC8516C00D7DEFD /* LaunchScreen.storyboard */; };
+		C887B6352AC8523200D7DEFD /* MapMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5E12AC8523200D7DEFD /* MapMarkerViewController.swift */; };
+		C887B6362AC8523200D7DEFD /* MapMqttViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5E22AC8523200D7DEFD /* MapMqttViewController.swift */; };
+		C887B6372AC8523200D7DEFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5E32AC8523200D7DEFD /* MapViewController.swift */; };
+		C887B6382AC8523200D7DEFD /* MapLocationManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5E42AC8523200D7DEFD /* MapLocationManagerViewController.swift */; };
+		C887B6392AC8523200D7DEFD /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5E52AC8523200D7DEFD /* MapTableViewController.swift */; };
+		C887B63A2AC8523200D7DEFD /* Rsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B5E72AC8523200D7DEFD /* Rsa.swift */; };
+		C887B63B2AC8523200D7DEFD /* happy_gr.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5E82AC8523200D7DEFD /* happy_gr.png */; };
+		C887B63C2AC8523200D7DEFD /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5E92AC8523200D7DEFD /* happy.png */; };
+		C887B63D2AC8523200D7DEFD /* happy_pi.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5EA2AC8523200D7DEFD /* happy_pi.png */; };
+		C887B63E2AC8523200D7DEFD /* Yeongdeok Snow Crab.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C887B5EB2AC8523200D7DEFD /* Yeongdeok Snow Crab.ttf */; };
+		C887B63F2AC8523200D7DEFD /* dog5.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5ED2AC8523200D7DEFD /* dog5.png */; };
+		C887B6402AC8523200D7DEFD /* dog4.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5EE2AC8523200D7DEFD /* dog4.png */; };
+		C887B6412AC8523200D7DEFD /* dog6.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5EF2AC8523200D7DEFD /* dog6.png */; };
+		C887B6422AC8523200D7DEFD /* dog7.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F02AC8523200D7DEFD /* dog7.png */; };
+		C887B6432AC8523200D7DEFD /* joinBTN.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F12AC8523200D7DEFD /* joinBTN.png */; };
+		C887B6442AC8523200D7DEFD /* joinIn.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F22AC8523200D7DEFD /* joinIn.png */; };
+		C887B6452AC8523200D7DEFD /* dog3.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F32AC8523200D7DEFD /* dog3.png */; };
+		C887B6462AC8523200D7DEFD /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F42AC8523200D7DEFD /* dog2.png */; };
+		C887B6472AC8523200D7DEFD /* common24ClearGy.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F52AC8523200D7DEFD /* common24ClearGy.png */; };
+		C887B6482AC8523200D7DEFD /* appLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F62AC8523200D7DEFD /* appLogo.png */; };
+		C887B6492AC8523200D7DEFD /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F72AC8523200D7DEFD /* dog1.png */; };
+		C887B64A2AC8523200D7DEFD /* poi24HistoryGray.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F82AC8523200D7DEFD /* poi24HistoryGray.png */; };
+		C887B64B2AC8523200D7DEFD /* launchBG.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5F92AC8523200D7DEFD /* launchBG.png */; };
+		C887B64C2AC8523200D7DEFD /* who.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5FA2AC8523200D7DEFD /* who.png */; };
+		C887B64D2AC8523200D7DEFD /* midLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5FB2AC8523200D7DEFD /* midLocation.png */; };
+		C887B64E2AC8523200D7DEFD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5FC2AC8523200D7DEFD /* logo.png */; };
+		C887B64F2AC8523200D7DEFD /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5FD2AC8523200D7DEFD /* speech-bubble.png */; };
+		C887B6502AC8523200D7DEFD /* pw.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5FE2AC8523200D7DEFD /* pw.png */; };
+		C887B6512AC8523200D7DEFD /* signboard.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B5FF2AC8523200D7DEFD /* signboard.png */; };
+		C887B6522AC8523200D7DEFD /* name.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6002AC8523200D7DEFD /* name.png */; };
+		C887B6532AC8523200D7DEFD /* dogHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6012AC8523200D7DEFD /* dogHouse.png */; };
+		C887B6542AC8523200D7DEFD /* station.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6022AC8523200D7DEFD /* station.png */; };
+		C887B6552AC8523200D7DEFD /* dog8.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6032AC8523200D7DEFD /* dog8.png */; };
+		C887B6562AC8523200D7DEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C887B6042AC8523200D7DEFD /* Assets.xcassets */; };
+		C887B6572AC8523200D7DEFD /* appIocn.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6052AC8523200D7DEFD /* appIocn.png */; };
+		C887B6582AC8523200D7DEFD /* happy_bl.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6062AC8523200D7DEFD /* happy_bl.png */; };
+		C887B6592AC8523200D7DEFD /* happy_ye.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6072AC8523200D7DEFD /* happy_ye.png */; };
+		C887B65A2AC8523200D7DEFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C887B6082AC8523200D7DEFD /* GoogleService-Info.plist */; };
+		C887B65B2AC8523200D7DEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887B6092AC8523200D7DEFD /* LaunchScreen.storyboard */; };
+		C887B65C2AC8523200D7DEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C887B60B2AC8523200D7DEFD /* Main.storyboard */; };
+		C887B65D2AC8523200D7DEFD /* MapMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B60E2AC8523200D7DEFD /* MapMarkerViewController.swift */; };
+		C887B65E2AC8523200D7DEFD /* MapMqttViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B60F2AC8523200D7DEFD /* MapMqttViewController.swift */; };
+		C887B65F2AC8523200D7DEFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6102AC8523200D7DEFD /* MapViewController.swift */; };
+		C887B6602AC8523200D7DEFD /* MapLocationManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6112AC8523200D7DEFD /* MapLocationManagerViewController.swift */; };
+		C887B6612AC8523200D7DEFD /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6122AC8523200D7DEFD /* MapTableViewController.swift */; };
+		C887B6622AC8523200D7DEFD /* MqttClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6132AC8523200D7DEFD /* MqttClient.swift */; };
+		C887B6632AC8523200D7DEFD /* Supermagic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C887B6142AC8523200D7DEFD /* Supermagic.ttf */; };
+		C887B6642AC8523200D7DEFD /* 휴먼범석체.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C887B6152AC8523200D7DEFD /* 휴먼범석체.ttf */; };
+		C887B6652AC8523200D7DEFD /* signboard.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6162AC8523200D7DEFD /* signboard.png */; };
+		C887B6662AC8523200D7DEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6172AC8523200D7DEFD /* AppDelegate.swift */; };
+		C887B6672AC8523200D7DEFD /* dogHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6182AC8523200D7DEFD /* dogHouse.png */; };
+		C887B6682AC8523200D7DEFD /* station.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6192AC8523200D7DEFD /* station.png */; };
+		C887B6692AC8523200D7DEFD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C887B61A2AC8523200D7DEFD /* Info.plist */; };
+		C887B66A2AC8523200D7DEFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B61B2AC8523200D7DEFD /* SceneDelegate.swift */; };
+		C887B66B2AC8523200D7DEFD /* midLoc.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B61C2AC8523200D7DEFD /* midLoc.png */; };
+		C887B66C2AC8523200D7DEFD /* dog5.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B61E2AC8523200D7DEFD /* dog5.png */; };
+		C887B66D2AC8523200D7DEFD /* dog4.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B61F2AC8523200D7DEFD /* dog4.png */; };
+		C887B66E2AC8523200D7DEFD /* dog6.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6202AC8523200D7DEFD /* dog6.png */; };
+		C887B66F2AC8523200D7DEFD /* dog7.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6212AC8523200D7DEFD /* dog7.png */; };
+		C887B6722AC8523200D7DEFD /* dog3.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6242AC8523200D7DEFD /* dog3.png */; };
+		C887B6732AC8523200D7DEFD /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6252AC8523200D7DEFD /* dog2.png */; };
+		C887B6752AC8523200D7DEFD /* appLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6272AC8523200D7DEFD /* appLogo.png */; };
+		C887B6762AC8523200D7DEFD /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6282AC8523200D7DEFD /* dog1.png */; };
+		C887B6782AC8523200D7DEFD /* launchBG.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B62A2AC8523200D7DEFD /* launchBG.png */; };
+		C887B67B2AC8523200D7DEFD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B62D2AC8523200D7DEFD /* logo.png */; };
+		C887B67E2AC8523200D7DEFD /* signboard.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6302AC8523200D7DEFD /* signboard.png */; };
+		C887B6802AC8523200D7DEFD /* dogHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6322AC8523200D7DEFD /* dogHouse.png */; };
+		C887B6822AC8523200D7DEFD /* dog8.png in Resources */ = {isa = PBXBuildFile; fileRef = C887B6342AC8523200D7DEFD /* dog8.png */; };
+		C887B6852AC8525500D7DEFD /* MqttClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6832AC8525500D7DEFD /* MqttClient.swift */; };
+		C887B6862AC8525500D7DEFD /* Rsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887B6842AC8525500D7DEFD /* Rsa.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C887B5C92AC8516B00D7DEFD /* Trackmate_encrypted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackmate_encrypted.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C887B5CC2AC8516B00D7DEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C887B5CE2AC8516B00D7DEFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C887B5D32AC8516B00D7DEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C887B5D52AC8516C00D7DEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C887B5D82AC8516C00D7DEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C887B5DA2AC8516C00D7DEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C887B5E12AC8523200D7DEFD /* MapMarkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerViewController.swift; sourceTree = "<group>"; };
+		C887B5E22AC8523200D7DEFD /* MapMqttViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMqttViewController.swift; sourceTree = "<group>"; };
+		C887B5E32AC8523200D7DEFD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C887B5E42AC8523200D7DEFD /* MapLocationManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationManagerViewController.swift; sourceTree = "<group>"; };
+		C887B5E52AC8523200D7DEFD /* MapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
+		C887B5E72AC8523200D7DEFD /* Rsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rsa.swift; sourceTree = "<group>"; };
+		C887B5E82AC8523200D7DEFD /* happy_gr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_gr.png; sourceTree = "<group>"; };
+		C887B5E92AC8523200D7DEFD /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		C887B5EA2AC8523200D7DEFD /* happy_pi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_pi.png; sourceTree = "<group>"; };
+		C887B5EB2AC8523200D7DEFD /* Yeongdeok Snow Crab.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeongdeok Snow Crab.ttf"; sourceTree = "<group>"; };
+		C887B5ED2AC8523200D7DEFD /* dog5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog5.png; sourceTree = "<group>"; };
+		C887B5EE2AC8523200D7DEFD /* dog4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog4.png; sourceTree = "<group>"; };
+		C887B5EF2AC8523200D7DEFD /* dog6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog6.png; sourceTree = "<group>"; };
+		C887B5F02AC8523200D7DEFD /* dog7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog7.png; sourceTree = "<group>"; };
+		C887B5F12AC8523200D7DEFD /* joinBTN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joinBTN.png; sourceTree = "<group>"; };
+		C887B5F22AC8523200D7DEFD /* joinIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joinIn.png; sourceTree = "<group>"; };
+		C887B5F32AC8523200D7DEFD /* dog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog3.png; sourceTree = "<group>"; };
+		C887B5F42AC8523200D7DEFD /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
+		C887B5F52AC8523200D7DEFD /* common24ClearGy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = common24ClearGy.png; sourceTree = "<group>"; };
+		C887B5F62AC8523200D7DEFD /* appLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLogo.png; sourceTree = "<group>"; };
+		C887B5F72AC8523200D7DEFD /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
+		C887B5F82AC8523200D7DEFD /* poi24HistoryGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi24HistoryGray.png; sourceTree = "<group>"; };
+		C887B5F92AC8523200D7DEFD /* launchBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchBG.png; sourceTree = "<group>"; };
+		C887B5FA2AC8523200D7DEFD /* who.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = who.png; sourceTree = "<group>"; };
+		C887B5FB2AC8523200D7DEFD /* midLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = midLocation.png; sourceTree = "<group>"; };
+		C887B5FC2AC8523200D7DEFD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C887B5FD2AC8523200D7DEFD /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble.png"; sourceTree = "<group>"; };
+		C887B5FE2AC8523200D7DEFD /* pw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pw.png; sourceTree = "<group>"; };
+		C887B5FF2AC8523200D7DEFD /* signboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signboard.png; sourceTree = "<group>"; };
+		C887B6002AC8523200D7DEFD /* name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = name.png; sourceTree = "<group>"; };
+		C887B6012AC8523200D7DEFD /* dogHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogHouse.png; sourceTree = "<group>"; };
+		C887B6022AC8523200D7DEFD /* station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station.png; sourceTree = "<group>"; };
+		C887B6032AC8523200D7DEFD /* dog8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog8.png; sourceTree = "<group>"; };
+		C887B6042AC8523200D7DEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C887B6052AC8523200D7DEFD /* appIocn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIocn.png; sourceTree = "<group>"; };
+		C887B6062AC8523200D7DEFD /* happy_bl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_bl.png; sourceTree = "<group>"; };
+		C887B6072AC8523200D7DEFD /* happy_ye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_ye.png; sourceTree = "<group>"; };
+		C887B6082AC8523200D7DEFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C887B60A2AC8523200D7DEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C887B60C2AC8523200D7DEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C887B60E2AC8523200D7DEFD /* MapMarkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerViewController.swift; sourceTree = "<group>"; };
+		C887B60F2AC8523200D7DEFD /* MapMqttViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMqttViewController.swift; sourceTree = "<group>"; };
+		C887B6102AC8523200D7DEFD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C887B6112AC8523200D7DEFD /* MapLocationManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationManagerViewController.swift; sourceTree = "<group>"; };
+		C887B6122AC8523200D7DEFD /* MapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
+		C887B6132AC8523200D7DEFD /* MqttClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MqttClient.swift; sourceTree = "<group>"; };
+		C887B6142AC8523200D7DEFD /* Supermagic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Supermagic.ttf; sourceTree = "<group>"; };
+		C887B6152AC8523200D7DEFD /* 휴먼범석체.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "휴먼범석체.ttf"; sourceTree = "<group>"; };
+		C887B6162AC8523200D7DEFD /* signboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signboard.png; sourceTree = "<group>"; };
+		C887B6172AC8523200D7DEFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C887B6182AC8523200D7DEFD /* dogHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogHouse.png; sourceTree = "<group>"; };
+		C887B6192AC8523200D7DEFD /* station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station.png; sourceTree = "<group>"; };
+		C887B61A2AC8523200D7DEFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C887B61B2AC8523200D7DEFD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C887B61C2AC8523200D7DEFD /* midLoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = midLoc.png; sourceTree = "<group>"; };
+		C887B61E2AC8523200D7DEFD /* dog5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog5.png; sourceTree = "<group>"; };
+		C887B61F2AC8523200D7DEFD /* dog4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog4.png; sourceTree = "<group>"; };
+		C887B6202AC8523200D7DEFD /* dog6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog6.png; sourceTree = "<group>"; };
+		C887B6212AC8523200D7DEFD /* dog7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog7.png; sourceTree = "<group>"; };
+		C887B6242AC8523200D7DEFD /* dog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog3.png; sourceTree = "<group>"; };
+		C887B6252AC8523200D7DEFD /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
+		C887B6272AC8523200D7DEFD /* appLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLogo.png; sourceTree = "<group>"; };
+		C887B6282AC8523200D7DEFD /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
+		C887B62A2AC8523200D7DEFD /* launchBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchBG.png; sourceTree = "<group>"; };
+		C887B62D2AC8523200D7DEFD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C887B6302AC8523200D7DEFD /* signboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signboard.png; sourceTree = "<group>"; };
+		C887B6322AC8523200D7DEFD /* dogHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogHouse.png; sourceTree = "<group>"; };
+		C887B6342AC8523200D7DEFD /* dog8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog8.png; sourceTree = "<group>"; };
+		C887B6832AC8525500D7DEFD /* MqttClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MqttClient.swift; sourceTree = "<group>"; };
+		C887B6842AC8525500D7DEFD /* Rsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rsa.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C887B5C62AC8516B00D7DEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C887B5C02AC8516B00D7DEFD = {
+			isa = PBXGroup;
+			children = (
+				C887B5CB2AC8516B00D7DEFD /* Trackmate_encrypted */,
+				C887B5CA2AC8516B00D7DEFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C887B5CA2AC8516B00D7DEFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C887B5C92AC8516B00D7DEFD /* Trackmate_encrypted.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C887B5CB2AC8516B00D7DEFD /* Trackmate_encrypted */ = {
+			isa = PBXGroup;
+			children = (
+				C887B61D2AC8523200D7DEFD /* Images */,
+				C887B5E02AC8523100D7DEFD /* MapViewController */,
+				C887B5E62AC8523200D7DEFD /* Where */,
+				C887B5CC2AC8516B00D7DEFD /* AppDelegate.swift */,
+				C887B5CE2AC8516B00D7DEFD /* SceneDelegate.swift */,
+				C887B6832AC8525500D7DEFD /* MqttClient.swift */,
+				C887B6842AC8525500D7DEFD /* Rsa.swift */,
+				C887B5D22AC8516B00D7DEFD /* Main.storyboard */,
+				C887B5D52AC8516C00D7DEFD /* Assets.xcassets */,
+				C887B5D72AC8516C00D7DEFD /* LaunchScreen.storyboard */,
+				C887B5DA2AC8516C00D7DEFD /* Info.plist */,
+			);
+			path = Trackmate_encrypted;
+			sourceTree = "<group>";
+		};
+		C887B5E02AC8523100D7DEFD /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C887B5E12AC8523200D7DEFD /* MapMarkerViewController.swift */,
+				C887B5E22AC8523200D7DEFD /* MapMqttViewController.swift */,
+				C887B5E32AC8523200D7DEFD /* MapViewController.swift */,
+				C887B5E42AC8523200D7DEFD /* MapLocationManagerViewController.swift */,
+				C887B5E52AC8523200D7DEFD /* MapTableViewController.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		C887B5E62AC8523200D7DEFD /* Where */ = {
+			isa = PBXGroup;
+			children = (
+				C887B5E72AC8523200D7DEFD /* Rsa.swift */,
+				C887B5E82AC8523200D7DEFD /* happy_gr.png */,
+				C887B5E92AC8523200D7DEFD /* happy.png */,
+				C887B5EA2AC8523200D7DEFD /* happy_pi.png */,
+				C887B5EB2AC8523200D7DEFD /* Yeongdeok Snow Crab.ttf */,
+				C887B5EC2AC8523200D7DEFD /* Images */,
+				C887B6042AC8523200D7DEFD /* Assets.xcassets */,
+				C887B6052AC8523200D7DEFD /* appIocn.png */,
+				C887B6062AC8523200D7DEFD /* happy_bl.png */,
+				C887B6072AC8523200D7DEFD /* happy_ye.png */,
+				C887B6082AC8523200D7DEFD /* GoogleService-Info.plist */,
+				C887B6092AC8523200D7DEFD /* LaunchScreen.storyboard */,
+				C887B60B2AC8523200D7DEFD /* Main.storyboard */,
+				C887B60D2AC8523200D7DEFD /* MapViewController */,
+				C887B6132AC8523200D7DEFD /* MqttClient.swift */,
+				C887B6142AC8523200D7DEFD /* Supermagic.ttf */,
+				C887B6152AC8523200D7DEFD /* 휴먼범석체.ttf */,
+				C887B6162AC8523200D7DEFD /* signboard.png */,
+				C887B6172AC8523200D7DEFD /* AppDelegate.swift */,
+				C887B6182AC8523200D7DEFD /* dogHouse.png */,
+				C887B6192AC8523200D7DEFD /* station.png */,
+				C887B61A2AC8523200D7DEFD /* Info.plist */,
+				C887B61B2AC8523200D7DEFD /* SceneDelegate.swift */,
+				C887B61C2AC8523200D7DEFD /* midLoc.png */,
+			);
+			path = Where;
+			sourceTree = "<group>";
+		};
+		C887B5EC2AC8523200D7DEFD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C887B5ED2AC8523200D7DEFD /* dog5.png */,
+				C887B5EE2AC8523200D7DEFD /* dog4.png */,
+				C887B5EF2AC8523200D7DEFD /* dog6.png */,
+				C887B5F02AC8523200D7DEFD /* dog7.png */,
+				C887B5F12AC8523200D7DEFD /* joinBTN.png */,
+				C887B5F22AC8523200D7DEFD /* joinIn.png */,
+				C887B5F32AC8523200D7DEFD /* dog3.png */,
+				C887B5F42AC8523200D7DEFD /* dog2.png */,
+				C887B5F52AC8523200D7DEFD /* common24ClearGy.png */,
+				C887B5F62AC8523200D7DEFD /* appLogo.png */,
+				C887B5F72AC8523200D7DEFD /* dog1.png */,
+				C887B5F82AC8523200D7DEFD /* poi24HistoryGray.png */,
+				C887B5F92AC8523200D7DEFD /* launchBG.png */,
+				C887B5FA2AC8523200D7DEFD /* who.png */,
+				C887B5FB2AC8523200D7DEFD /* midLocation.png */,
+				C887B5FC2AC8523200D7DEFD /* logo.png */,
+				C887B5FD2AC8523200D7DEFD /* speech-bubble.png */,
+				C887B5FE2AC8523200D7DEFD /* pw.png */,
+				C887B5FF2AC8523200D7DEFD /* signboard.png */,
+				C887B6002AC8523200D7DEFD /* name.png */,
+				C887B6012AC8523200D7DEFD /* dogHouse.png */,
+				C887B6022AC8523200D7DEFD /* station.png */,
+				C887B6032AC8523200D7DEFD /* dog8.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C887B60D2AC8523200D7DEFD /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C887B60E2AC8523200D7DEFD /* MapMarkerViewController.swift */,
+				C887B60F2AC8523200D7DEFD /* MapMqttViewController.swift */,
+				C887B6102AC8523200D7DEFD /* MapViewController.swift */,
+				C887B6112AC8523200D7DEFD /* MapLocationManagerViewController.swift */,
+				C887B6122AC8523200D7DEFD /* MapTableViewController.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		C887B61D2AC8523200D7DEFD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C887B61E2AC8523200D7DEFD /* dog5.png */,
+				C887B61F2AC8523200D7DEFD /* dog4.png */,
+				C887B6202AC8523200D7DEFD /* dog6.png */,
+				C887B6212AC8523200D7DEFD /* dog7.png */,
+				C887B6242AC8523200D7DEFD /* dog3.png */,
+				C887B6252AC8523200D7DEFD /* dog2.png */,
+				C887B6272AC8523200D7DEFD /* appLogo.png */,
+				C887B6282AC8523200D7DEFD /* dog1.png */,
+				C887B62A2AC8523200D7DEFD /* launchBG.png */,
+				C887B62D2AC8523200D7DEFD /* logo.png */,
+				C887B6302AC8523200D7DEFD /* signboard.png */,
+				C887B6322AC8523200D7DEFD /* dogHouse.png */,
+				C887B6342AC8523200D7DEFD /* dog8.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C887B5C82AC8516B00D7DEFD /* Trackmate_encrypted */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C887B5DD2AC8516C00D7DEFD /* Build configuration list for PBXNativeTarget "Trackmate_encrypted" */;
+			buildPhases = (
+				C887B5C52AC8516B00D7DEFD /* Sources */,
+				C887B5C62AC8516B00D7DEFD /* Frameworks */,
+				C887B5C72AC8516B00D7DEFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trackmate_encrypted;
+			productName = Trackmate_encrypted;
+			productReference = C887B5C92AC8516B00D7DEFD /* Trackmate_encrypted.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C887B5C12AC8516B00D7DEFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C887B5C82AC8516B00D7DEFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C887B5C42AC8516B00D7DEFD /* Build configuration list for PBXProject "Trackmate_encrypted" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C887B5C02AC8516B00D7DEFD;
+			productRefGroup = C887B5CA2AC8516B00D7DEFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C887B5C82AC8516B00D7DEFD /* Trackmate_encrypted */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C887B5C72AC8516B00D7DEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C887B6822AC8523200D7DEFD /* dog8.png in Resources */,
+				C887B64C2AC8523200D7DEFD /* who.png in Resources */,
+				C887B6652AC8523200D7DEFD /* signboard.png in Resources */,
+				C887B64E2AC8523200D7DEFD /* logo.png in Resources */,
+				C887B6522AC8523200D7DEFD /* name.png in Resources */,
+				C887B6752AC8523200D7DEFD /* appLogo.png in Resources */,
+				C887B5D92AC8516C00D7DEFD /* LaunchScreen.storyboard in Resources */,
+				C887B6412AC8523200D7DEFD /* dog6.png in Resources */,
+				C887B64D2AC8523200D7DEFD /* midLocation.png in Resources */,
+				C887B65C2AC8523200D7DEFD /* Main.storyboard in Resources */,
+				C887B6722AC8523200D7DEFD /* dog3.png in Resources */,
+				C887B6692AC8523200D7DEFD /* Info.plist in Resources */,
+				C887B6782AC8523200D7DEFD /* launchBG.png in Resources */,
+				C887B6502AC8523200D7DEFD /* pw.png in Resources */,
+				C887B6492AC8523200D7DEFD /* dog1.png in Resources */,
+				C887B66C2AC8523200D7DEFD /* dog5.png in Resources */,
+				C887B6572AC8523200D7DEFD /* appIocn.png in Resources */,
+				C887B65B2AC8523200D7DEFD /* LaunchScreen.storyboard in Resources */,
+				C887B64B2AC8523200D7DEFD /* launchBG.png in Resources */,
+				C887B63B2AC8523200D7DEFD /* happy_gr.png in Resources */,
+				C887B6402AC8523200D7DEFD /* dog4.png in Resources */,
+				C887B6642AC8523200D7DEFD /* 휴먼범석체.ttf in Resources */,
+				C887B6762AC8523200D7DEFD /* dog1.png in Resources */,
+				C887B6552AC8523200D7DEFD /* dog8.png in Resources */,
+				C887B6672AC8523200D7DEFD /* dogHouse.png in Resources */,
+				C887B63F2AC8523200D7DEFD /* dog5.png in Resources */,
+				C887B6482AC8523200D7DEFD /* appLogo.png in Resources */,
+				C887B6542AC8523200D7DEFD /* station.png in Resources */,
+				C887B63E2AC8523200D7DEFD /* Yeongdeok Snow Crab.ttf in Resources */,
+				C887B64A2AC8523200D7DEFD /* poi24HistoryGray.png in Resources */,
+				C887B66E2AC8523200D7DEFD /* dog6.png in Resources */,
+				C887B6452AC8523200D7DEFD /* dog3.png in Resources */,
+				C887B5D62AC8516C00D7DEFD /* Assets.xcassets in Resources */,
+				C887B63C2AC8523200D7DEFD /* happy.png in Resources */,
+				C887B6422AC8523200D7DEFD /* dog7.png in Resources */,
+				C887B5D42AC8516B00D7DEFD /* Main.storyboard in Resources */,
+				C887B6462AC8523200D7DEFD /* dog2.png in Resources */,
+				C887B6472AC8523200D7DEFD /* common24ClearGy.png in Resources */,
+				C887B6562AC8523200D7DEFD /* Assets.xcassets in Resources */,
+				C887B6442AC8523200D7DEFD /* joinIn.png in Resources */,
+				C887B6682AC8523200D7DEFD /* station.png in Resources */,
+				C887B65A2AC8523200D7DEFD /* GoogleService-Info.plist in Resources */,
+				C887B64F2AC8523200D7DEFD /* speech-bubble.png in Resources */,
+				C887B6432AC8523200D7DEFD /* joinBTN.png in Resources */,
+				C887B6582AC8523200D7DEFD /* happy_bl.png in Resources */,
+				C887B6592AC8523200D7DEFD /* happy_ye.png in Resources */,
+				C887B6532AC8523200D7DEFD /* dogHouse.png in Resources */,
+				C887B66D2AC8523200D7DEFD /* dog4.png in Resources */,
+				C887B63D2AC8523200D7DEFD /* happy_pi.png in Resources */,
+				C887B6802AC8523200D7DEFD /* dogHouse.png in Resources */,
+				C887B6732AC8523200D7DEFD /* dog2.png in Resources */,
+				C887B66F2AC8523200D7DEFD /* dog7.png in Resources */,
+				C887B66B2AC8523200D7DEFD /* midLoc.png in Resources */,
+				C887B67B2AC8523200D7DEFD /* logo.png in Resources */,
+				C887B6632AC8523200D7DEFD /* Supermagic.ttf in Resources */,
+				C887B67E2AC8523200D7DEFD /* signboard.png in Resources */,
+				C887B6512AC8523200D7DEFD /* signboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C887B5C52AC8516B00D7DEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C887B65D2AC8523200D7DEFD /* MapMarkerViewController.swift in Sources */,
+				C887B6612AC8523200D7DEFD /* MapTableViewController.swift in Sources */,
+				C887B6602AC8523200D7DEFD /* MapLocationManagerViewController.swift in Sources */,
+				C887B63A2AC8523200D7DEFD /* Rsa.swift in Sources */,
+				C887B6852AC8525500D7DEFD /* MqttClient.swift in Sources */,
+				C887B6372AC8523200D7DEFD /* MapViewController.swift in Sources */,
+				C887B65E2AC8523200D7DEFD /* MapMqttViewController.swift in Sources */,
+				C887B66A2AC8523200D7DEFD /* SceneDelegate.swift in Sources */,
+				C887B5CD2AC8516B00D7DEFD /* AppDelegate.swift in Sources */,
+				C887B6662AC8523200D7DEFD /* AppDelegate.swift in Sources */,
+				C887B6862AC8525500D7DEFD /* Rsa.swift in Sources */,
+				C887B5CF2AC8516B00D7DEFD /* SceneDelegate.swift in Sources */,
+				C887B65F2AC8523200D7DEFD /* MapViewController.swift in Sources */,
+				C887B6392AC8523200D7DEFD /* MapTableViewController.swift in Sources */,
+				C887B6622AC8523200D7DEFD /* MqttClient.swift in Sources */,
+				C887B6362AC8523200D7DEFD /* MapMqttViewController.swift in Sources */,
+				C887B6352AC8523200D7DEFD /* MapMarkerViewController.swift in Sources */,
+				C887B6382AC8523200D7DEFD /* MapLocationManagerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C887B5D22AC8516B00D7DEFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C887B5D32AC8516B00D7DEFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C887B5D72AC8516C00D7DEFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C887B5D82AC8516C00D7DEFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C887B6092AC8523200D7DEFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C887B60A2AC8523200D7DEFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C887B60B2AC8523200D7DEFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C887B60C2AC8523200D7DEFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C887B5DB2AC8516C00D7DEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C887B5DC2AC8516C00D7DEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C887B5DE2AC8516C00D7DEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUAV85P94F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trackmate_encrypted/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dony.Trackmate-encrypted";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C887B5DF2AC8516C00D7DEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUAV85P94F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trackmate_encrypted/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dony.Trackmate-encrypted";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C887B5C42AC8516B00D7DEFD /* Build configuration list for PBXProject "Trackmate_encrypted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C887B5DB2AC8516C00D7DEFD /* Debug */,
+				C887B5DC2AC8516C00D7DEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C887B5DD2AC8516C00D7DEFD /* Build configuration list for PBXNativeTarget "Trackmate_encrypted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C887B5DE2AC8516C00D7DEFD /* Debug */,
+				C887B5DF2AC8516C00D7DEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C887B5C12AC8516B00D7DEFD /* Project object */;
+}
